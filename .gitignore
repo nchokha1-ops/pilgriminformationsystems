@@ -1,4 +1,4 @@
-# WordPress core (if you’re not modifying it)
+# WordPress Core
 wp-admin/
 wp-includes/
 
@@ -6,23 +6,27 @@ wp-includes/
 wp-content/uploads/
 wp-content/cache/
 wp-content/backups/
+wp-content/backuply/
+wp-content/speedycache-config/
 
-# Ignore all themes except your custom one
+# Ignore all themes except custom one(s)
 wp-content/themes/*
-!wp-content/themes/your-custom-theme-folder/
+!wp-content/themes/<your-theme-name>/
 
 # Ignore all plugins except custom ones
 wp-content/plugins/*
-!wp-content/plugins/your-custom-plugin-folder/
+!wp-content/plugins/<your-plugin-name>/
 
-# System files
+# Secrets and system
+wp-config.php
+error_log
+web.config
+.htaccess
+
+# OS junk
 .DS_Store
 Thumbs.db
 
-# Node/project build files
+# Node build stuff
 node_modules/
 dist/
-
-# Don’t commit local config with secrets
-wp-config.php
-error_log
