@@ -1,0 +1,28 @@
+# WordPress core (if you’re not modifying it)
+wp-admin/
+wp-includes/
+
+# Uploads and cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+
+# Ignore all themes except your custom one
+wp-content/themes/*
+!wp-content/themes/your-custom-theme-folder/
+
+# Ignore all plugins except custom ones
+wp-content/plugins/*
+!wp-content/plugins/your-custom-plugin-folder/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node/project build files
+node_modules/
+dist/
+
+# Don’t commit local config with secrets
+wp-config.php
+error_log
